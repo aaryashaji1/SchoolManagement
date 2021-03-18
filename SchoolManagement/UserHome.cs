@@ -44,11 +44,11 @@ namespace SchoolManagement
             this.BackColor = Color.FromArgb(Convert.ToInt32(_student.Color));
             this.Left = _student.Left;
             this.Top = _student.Top;
-            //this.Text = label1.Text = "Malayalam:"+_student.Malayalam;
-            //this.Text = label2.Text = "English:" + _student.English;
-            //this.Text = label3.Text = "Maths:" + _student.Maths;
+            lblMalayalam.Text = "Malayalam:" + _student.Malayalam;
+            lblEnglish.Text = "English:" + _student.English;
+            lblMaths.Text = "Maths:" + _student.Maths;
             
-            
+
             this.Text = lblUsername.Text = "Welcome....." + _student.Name;
         }
 
