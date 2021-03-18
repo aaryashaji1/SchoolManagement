@@ -44,12 +44,11 @@ namespace SchoolManagement
             this.BackColor = Color.FromArgb(Convert.ToInt32(_student.Color));
             this.Left = _student.Left;
             this.Top = _student.Top;
-            lblMalayalam.Text = "Malayalam:" + _student.Malayalam;
-            lblEnglish.Text = "English:" + _student.English;
-            lblMaths.Text = "Maths:" + _student.Maths;
-            
-
-            this.Text = lblUsername.Text = "Welcome....." + _student.Name;
+            lblMalayalam.Text = "Malayalam :" + _student.Malayalam;
+            lblEnglish.Text = "English       :" + _student.English;
+            lblMaths.Text = "Maths         :" + _student.Maths;
+            lblTotal.Text = "Total           :" +( _student.Malayalam + _student.English + _student.Maths);
+            this.Text=lblUsername.Text = "Welcome....." + _student.Name;
         }
 
         private void lblTheme_Click(object sender, EventArgs e)
@@ -71,5 +70,17 @@ namespace SchoolManagement
             command.ExecuteNonQuery();
             con.Close();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            StudentLogin obj = new StudentLogin();
+            obj.Show();
+            this.Close();
+        }
+
+        //private void label1_Click(object sender, EventArgs e)
+        //{
+        //    Environment.Exit(0);
+        //}
     }
 }

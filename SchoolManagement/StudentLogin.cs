@@ -47,6 +47,7 @@ namespace SchoolManagement
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("Username", Username);
             command.Parameters.AddWithValue("Password", Password);
+            MessageBox.Show("successfully login");
 
 
             SqlDataReader reader = command.ExecuteReader();
