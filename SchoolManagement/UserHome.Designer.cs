@@ -99,7 +99,7 @@ namespace SchoolManagement
             this.lblTheme.AutoSize = true;
             this.lblTheme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTheme.ForeColor = System.Drawing.Color.White;
-            this.lblTheme.Location = new System.Drawing.Point(606, 37);
+            this.lblTheme.Location = new System.Drawing.Point(625, 20);
             this.lblTheme.Name = "lblTheme";
             this.lblTheme.Size = new System.Drawing.Size(51, 16);
             this.lblTheme.TabIndex = 5;
@@ -108,7 +108,7 @@ namespace SchoolManagement
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(700, 29);
+            this.btnLogOut.Location = new System.Drawing.Point(700, 12);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(88, 33);
             this.btnLogOut.TabIndex = 6;
